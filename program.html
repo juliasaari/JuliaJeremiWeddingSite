@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Program</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Special+Elite&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Page-specific styling to match the mock-up -->
+  <style>
+    .program-page{
+      padding: 0;
+      background: #dfeaea;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+    .program-header{
+      position: relative;
+      padding: 54px 0 26px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.72), rgba(255,255,255,.35));
+    }
+
+    .program-header::after{
+      content:"";
+      position:absolute;
+      left:-2%;
+      bottom:-22px;
+      width:104%;
+      height: 64px;
+      background: #93a9ab;
+      border-top-left-radius: 140px 24px;
+      border-top-right-radius: 140px 24px;
+      filter: blur(.15px);
+    }
+
+    .program-title{
+      text-align: center;
+      margin: 0;
+      padding: 0 16px 10px;
+    }
+
+    .program-body{
+      position: relative;
+      background: #93a9ab;
+      padding: 70px 0 90px;
+    }
+
+    .center-stage{
+      position: relative;
+      width: min(920px, calc(100% - 48px));
+      margin: 0 auto;
+    }
+
+
+    .schedule-photo{
+      background: #f7f7f7;
+      padding: 14px;
+      border-radius: 2px;
+      box-shadow: 0 18px 34px rgba(0,0,0,.22);
+    }
+
+    .sticker-left{
+      position: absolute;
+      left: -40px;
+      bottom: -30px;
+      width: 260px;
+      max-width: 42vw;
+      transform: rotate(-6deg);
+      filter: drop-shadow(0 14px 16px rgba(0,0,0,.22));
+      pointer-events: none;
+    }
+
+    .sticker-right{
+      position: absolute;
+      right: -34px;
+      top: 55%;
+      transform: translateY(-50%) rotate(8deg);
+      width: 220px;
+      max-width: 38vw;
+      filter: drop-shadow(0 14px 16px rgba(0,0,0,.20));
+      pointer-events: none;
+    }
+
+    @media (max-width: 860px){
+      .sticker-left{
+        left: -10px;
+        bottom: -26px;
+        width: 220px;
+        transform: rotate(-4deg);
+      }
+      .sticker-right{
+        right: -10px;
+        width: 190px;
+        top: 60%;
+      }
+    }
+
+    @media (max-width: 520px){
+      .sticker-left,
+      .sticker-right{
+        position: static;
+        transform: none;
+        margin: 18px auto 0;
+        display:block;
+      }
+      .sticker-right{ margin-top: 22px; }
+      .center-stage{ text-align:center; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="program-page">
+
+    <!-- Navigation -->
+    <div class="container" style="padding-top:18px;">
+      <nav class="nav" style="margin-bottom: 12px;">
+        <a href="./index.html">Home</a>
+        <a href="./reception.html">Reception</a>
+        <a href="./accommodation.html">Accommodation</a>
+        <a href="./program.html">Program</a>
+        <a href="./gifts.html">Gifts</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <header class="program-header">
+      <div class="container">
+        <h1 class="type program-title">program of events</h1>
+      </div>
+    </header>
+
+    <!-- Body -->
+    <section class="program-body">
+      <div class="center-stage">
+
+        <!-- Central schedule card -->
+        <div class="schedule-card">
+          <div class="schedule-photo">
+            <img src="./assets/banner2.png" alt="Program of events schedule" style="width:100vw; max-width:100%; margin-left:calc(-50vw + 50%); display:block;" />
+          </div>
+        </div>
+
+        <!-- Left sticker -->
+        <img class="sticker-left" src="./assets/djmitsy.png" alt="" aria-hidden="true" />
+
+        <!-- Right sticker -->
+        <img class="sticker-right" src="./assets/funnelflower.png" alt="" aria-hidden="true" />
+
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

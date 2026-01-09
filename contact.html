@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Special+Elite&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Page-specific styles -->
+  <style>
+    .contact-page{
+      background: #93a9ab; /* key colour */
+      min-height: 100vh;
+      padding: 56px 0 80px;
+      overflow: hidden;
+    }
+
+    .contact-wrap{
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 40px;
+      align-items: start;
+      margin-top: 18px;
+    }
+
+    .contact-lead{
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.15;
+      margin: 0 0 34px;
+      max-width: 720px;
+    }
+
+    .contacts-grid{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 46px;
+      max-width: 760px;
+    }
+
+    .person h2{
+      margin: 0 0 12px;
+      font-size: 36px;
+      line-height: 1.05;
+      text-transform: lowercase;
+    }
+
+    .person .label{
+      font-size: 20px;
+      margin: 18px 0 6px;
+    }
+
+    .person .value{
+      font-family: "Special Elite", ui-monospace, "Courier New", monospace;
+      letter-spacing: 0.3px;
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 0;
+      word-break: break-word;
+    }
+
+    .cat{
+      justify-self: end;
+      width: min(520px, 90%);
+      filter: drop-shadow(0 20px 22px rgba(0,0,0,.25));
+      margin-top: 10px;
+    }
+
+    @media (max-width: 920px){
+      .contact-wrap{
+        grid-template-columns: 1fr;
+        gap: 34px;
+      }
+      .cat{
+        justify-self: center;
+        width: min(420px, 86%);
+      }
+    }
+
+    @media (max-width: 560px){
+      .contacts-grid{
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+      .person h2{ font-size: 32px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="contact-page">
+    <div class="container">
+
+      <!-- Navigation -->
+      <nav class="nav" style="margin-bottom: 18px;">
+        <a href="./index.html">Home</a>
+        <a href="./reception.html">Reception</a>
+        <a href="./accommodation.html">Accommodation</a>
+        <a href="./program.html">Program</a>
+        <a href="./gifts.html">Gifts</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+
+      <section class="contact-wrap">
+
+        <!-- Left: text -->
+        <div>
+          <h1 class="type contact-lead">for related questions or<br>concerns,please contact:</h1>
+
+          <div class="contacts-grid">
+
+            <div class="person">
+              <h2 class="type">jeremi pinola</h2>
+
+              <div class="label">Phone</div>
+              <p class="value">(+358) 44 568 2443</p>
+
+              <div class="label">Email</div>
+              <p class="value">jeremipinola@gmail.com</p>
+            </div>
+
+            <div class="person">
+              <h2 class="type">julia saari</h2>
+
+              <div class="label">Phone</div>
+              <p class="value">(+358) 44 055 7107</p>
+
+              <div class="label">Email</div>
+              <p class="value">mariajulia.saari@gmail.com</p>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- Right: cat sticker -->
+        <div>
+          <img class="cat" src="./assets/mitsyhead.png" alt="" aria-hidden="true" />
+        </div>
+
+      </section>
+
+    </div>
+  </main>
+</body>
+</html>

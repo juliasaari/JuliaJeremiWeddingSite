@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Accommodation</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&family=Special+Elite&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Page-specific styles -->
+  <style>
+    .accommodation-page{
+      background: #e6f1f1;
+      min-height: 100vh;
+    }
+
+    /* Top banner */
+    .accommodation-banner{
+      width: 100%;
+      overflow: hidden;
+    }
+    .accommodation-banner img{
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Main content area */
+    .accommodation-content{
+      padding: 70px 0 90px;
+    }
+
+    .accommodation-grid{
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 48px;
+      align-items: start;
+    }
+
+    /* Text side */
+    .accommodation-text h1{
+      margin-bottom: 24px;
+    }
+
+    .accommodation-text p{
+      font-size: 22px;
+      line-height: 1.45;
+      margin-bottom: 26px;
+    }
+
+    .accommodation-text .links{
+      font-size: 20px;
+      line-height: 1.6;
+    }
+
+    /* Map + decoration */
+    .map-wrap{
+      position: relative;
+      width: 100%;
+    }
+
+    .map-frame{
+      background: #f7f7f7;
+      padding: 14px;
+      border-radius: 2px;
+      box-shadow: 0 18px 34px rgba(0,0,0,.22);
+      position: relative;
+      z-index: 2;
+    }
+
+    .tilkku{
+      position: absolute;
+      bottom: -46px;
+      right: -32px;
+      width: 220px;
+      max-width: 45vw;
+      z-index: 1;
+      filter: drop-shadow(0 10px 14px rgba(0,0,0,.18));
+      pointer-events: none;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px){
+      .accommodation-grid{
+        grid-template-columns: 1fr;
+        gap: 38px;
+      }
+      .map-wrap{
+        max-width: 520px;
+        margin: 0 auto;
+      }
+      .tilkku{
+        right: -10px;
+        bottom: -36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="accommodation-page">
+
+    <!-- Navigation -->
+    <div class="container" style="padding-top:18px;">
+      <nav class="nav" style="margin-bottom: 12px;">
+        <a href="./index.html">Home</a>
+        <a href="./reception.html">Reception</a>
+        <a href="./accommodation.html">Accommodation</a>
+        <a href="./program.html">Program</a>
+        <a href="./gifts.html">Gifts</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <!-- Full-width banner -->
+    <section class="accommodation-banner">
+      <img src="./assets/banner1.png" alt="" aria-hidden="true" />
+    </section>
+
+    <!-- Content -->
+    <section class="accommodation-content">
+      <div class="container">
+        <div class="accommodation-grid">
+
+          <!-- Left: text -->
+          <div class="accommodation-text">
+            <h1 class="type">Staying at<br>Mathildedal</h1>
+
+            <p>
+              Our wedding will take place in Mathildedal, around 30 minutes from Salo.
+              There are many accommodation options in the village from hotel rooms
+              to cabins for larger groups.
+            </p>
+
+            <p>
+              We have a discount code (Group15) for those wishing to book a cabin
+              at Matilda Villas for the whole weekend with a larger group (4–8 people).
+            </p>
+
+            <div class="links">
+              <p>
+                More information:
+                <br>
+                visitmathildedal.fi
+                <br>
+                Matilda Villas: www.matildavillas.fi
+              </p>
+            </div>
+          </div>
+
+          <!-- Right: map + decoration -->
+          <div class="map-wrap">
+            <div class="map-frame">
+              <img src="./assets/matildamap.png" alt="Map of Mathildedal" />
+            </div>
+
+            <img
+              class="tilkku"
+              src="./assets/tilkku.png"
+              alt=""
+              aria-hidden="true"
+            />
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

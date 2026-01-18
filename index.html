@@ -13,7 +13,7 @@
 </head>
 <body>
 
-  <main class="page" style="background:#dfeaea;">
+  <main class="page" style="background:#dfeaea; padding-bottom:0;">
     <div class="container">
 
       <nav class="nav sticky-nav">
@@ -25,7 +25,7 @@
         <a href="#contact">Contact</a>
       </nav>
 
-      <section id="rsvp" class="grid-2" style="scroll-margin-top: 500px;">
+      <section id="rsvp" class="grid-2" style="scroll-margin-top: 500px; margin-top: 120px;">
         <!-- Left: polaroid stack -->
         <div class="polaroid-stack">
           <!-- Replace these filenames with your real asset names -->
@@ -169,7 +169,126 @@
         </div>
       </section>
 
-      <!-- Accommodation Section -->
+ 
+      <!-- Program Section -->
+      <section id="program" style="margin-top:80px; margin-bottom:80px; background: #93a9ab; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
+        <style>
+          .program-page{
+            padding: 0;
+            background: #dfeaea;
+            min-height: 100vh;
+            overflow: hidden;
+          }
+          .program-header{
+            position: relative;
+            padding-top: 20px;
+          }
+          .program-header::after{
+            content:"";
+            position:absolute;
+            left:-2%;
+            bottom:-22px;
+            width:104%;
+            height: 64px;
+            background: none;
+            border-top-left-radius: 140px 24px;
+            border-top-right-radius: 140px 24px;
+            filter: blur(.15px);
+          }
+          .program-title{
+            text-align: center;
+            margin: 0;
+            padding: 0 16px 10px;
+          }
+          .program-body{
+            position: relative;
+            background: none;
+          }
+ 
+          .sticker-djmitsy{
+            left: -100px;
+            top: -50px; 
+            width: 600px;
+            height: auto;
+            max-width: 42vw;
+            transform: rotate(-6deg);
+            filter: drop-shadow(0 14px 16px rgba(0,0,0,.22));
+            pointer-events: none;
+          }
+          
+          @media (max-width: 860px){
+            .sticker-djmitsy{
+              right: -10px;
+              width: 190px;
+              top: 60%;
+            }
+          }
+          @media (max-width: 520px){
+            .sticker-djmitsy{
+              position: static;
+              transform: none;
+              margin: 18px 20px 50px 0;
+              display:block;
+            }
+            .sticker-djmitsy{ margin-top: 22px; }
+            .center-stage{ text-align:center; }
+          }
+          .schedule-event{
+            padding-bottom: px;
+          }
+          .program-grid {
+            display: flex;
+            grid-template-columns: 1fr 1fr;
+            gap: 32px;
+          }
+          .program-left {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            order: 1;
+          }
+          .program-right {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            order: 2;
+          }
+          @media (max-width: 860px) {
+            .program-grid {
+              grid-template-columns: 1fr;
+            }
+            .program-left, .program-right {
+              order: initial;
+            }
+          }
+        </style>
+          <img style="display: block; margin: 0 auto;" class="program-section-mobile-sticker sticker-djmitsy" src="./assets/djmitsy.png" alt="DJ Mitsy sticker" />
+     
+
+        <header class="program-header">
+        <div style="position:relative; text-align:center;">
+          <h1 class="type program-title">program of events</h1>
+        </div>
+        </header>
+        <section class="program-body">
+          <div class="program-grid">
+            <div class="program-left">
+              <img class="sticker-djmitsy" src="./assets/djmitsy.png" alt="DJ Mitsy sticker" />
+            </div>
+            <div class="program-right">
+              <ul class="schedule-list">
+                <li><span class="schedule-time">13:30</span><span class="schedule-event">Arrival</span></li>
+                <li><span class="schedule-time">14:00</span><span class="schedule-event">Welcome toast and ceremony</span></li>
+                <li><span class="schedule-time">15:00</span><span class="schedule-event">Garden aperatifs</span></li>
+                <li><span class="schedule-time">17:00</span><span class="schedule-event">Dinner</span></li>
+                <li><span class="schedule-time">19:30</span><span class="schedule-event">Live band and dancing</span></li>
+                <li><span class="schedule-time">22:00</span><span class="schedule-event">DJ and evening snack</span></li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </section>
+           <!-- Accommodation Section -->
       <section id="accommodation" style="margin-top:80px; margin-bottom:80px;">
         <style>
           .accommodation-banner {
@@ -281,140 +400,22 @@
           </div>
         </section>
       </section>
-      <!-- Program Section -->
-      <section id="program" style="margin-top:80px; margin-bottom:80px; background: #93a9ab; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
-        <style>
-          .program-page{
-            padding: 0;
-            background: #dfeaea;
-            min-height: 100vh;
-            overflow: hidden;
-          }
-          .program-header{
-            position: relative;
-            padding-top: 20px;
-          }
-          .program-header::after{
-            content:"";
-            position:absolute;
-            left:-2%;
-            bottom:-22px;
-            width:104%;
-            height: 64px;
-            background: none;
-            border-top-left-radius: 140px 24px;
-            border-top-right-radius: 140px 24px;
-            filter: blur(.15px);
-          }
-          .program-title{
-            text-align: center;
-            margin: 0;
-            padding: 0 16px 10px;
-          }
-          .program-body{
-            position: relative;
-            background: none;
-          }
- 
-          .sticker-djmitsy{
-            left: -100px;
-            top: -50px; 
-            width: 600px;
-            height: auto;
-            max-width: 42vw;
-            transform: rotate(-6deg);
-            filter: drop-shadow(0 14px 16px rgba(0,0,0,.22));
-            pointer-events: none;
-          }
-          
-          @media (max-width: 860px){
-            .sticker-djmitsy{
-              right: -10px;
-              width: 190px;
-              top: 60%;
-            }
-          }
-          @media (max-width: 520px){
-            .sticker-djmitsy{
-              position: static;
-              transform: none;
-              margin: 18px 20px 50px 0;
-              display:block;
-            }
-            .sticker-djmitsy{ margin-top: 22px; }
-            .center-stage{ text-align:center; }
-          }
-          .schedule-event{
-            padding-bottom: px;
-          }
-          .program-grid {
-            display: flex;
-            grid-template-columns: 1fr 1fr;
-            gap: 32px;
-          }
-          .program-left {
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            order: 1;
-          }
-          .program-right {
-            display: flex;
-            justify-content: flex-start;
-            align-items: flex-start;
-            order: 2;
-          }
-          @media (max-width: 860px) {
-            .program-grid {
-              grid-template-columns: 1fr;
-            }
-            .program-left, .program-right {
-              order: initial;
-            }
-          }
-        </style>
-          <img class="program-section-mobile-sticker sticker-djmitsy" src="./assets/djmitsy.png" alt="DJ Mitsy sticker" />
-     
-
-        <header class="program-header">
-        <div style="position:relative; text-align:center;">
-          <h1 class="type program-title">program of events</h1>
-        </div>
-        </header>
-        <section class="program-body">
-          <div class="program-grid">
-            <div class="program-left">
-              <img class="sticker-djmitsy" src="./assets/djmitsy.png" alt="DJ Mitsy sticker" />
-            </div>
-            <div class="program-right">
-              <ul class="schedule-list">
-                <li><span class="schedule-time">13:30</span><span class="schedule-event">Arrival</span></li>
-                <li><span class="schedule-time">14:00</span><span class="schedule-event">Welcome toast and ceremony</span></li>
-                <li><span class="schedule-time">15:00</span><span class="schedule-event">Garden aperatifs</span></li>
-                <li><span class="schedule-time">17:00</span><span class="schedule-event">Dinner</span></li>
-                <li><span class="schedule-time">19:30</span><span class="schedule-event">Live band and dancing</span></li>
-                <li><span class="schedule-time">22:00</span><span class="schedule-event">DJ and evening snack</span></li>
-              </ul>
-            </div>
-          </div>
-        </section>
-      </section>
 
       <!-- Gifts Section -->
-      <section id="gifts" style="margin-top:80px; margin-bottom:80px;">
+      <section id="gifts" style="margin-top:16px;">
         <style>
           .gifts-page{
             background: #dfeaea;
-            min-height: 100vh;
+            min-height: 70vh;
             display: flex;
-            align-items: center;
-            padding: 56px 0;
+            align-items: top;
+            padding: 24px 0 0 0;
           }
           .gifts-grid{
             display: grid;
             grid-template-columns: 0.95fr 1.05fr;
-            gap: 64px;
-            align-items: center;
+            gap: 44px;
+            align-items: flex-start;
           }
           .gifts-photo{
             background: #f7f7f7;
@@ -488,12 +489,12 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" style="margin-top:80px; margin-bottom:80px;">
+      <section id="contact" style="margin-top:80px; margin-bottom:80px; background: #93a9ab; width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw;">
         <style>
           .contact-page{
             background: #93a9ab;
-            min-height: 100vh;
-            padding: 56px 0 80px;
+            min-height: 70vh;
+            padding: 40px  0 80px;
             overflow: hidden;
           }
           .contact-wrap{

@@ -17,12 +17,13 @@
     <div class="container">
 
       <nav class="nav sticky-nav">
-        <a href="#rsvp">RSVP</a>
-        <a href="#reception">Reception</a>
-        <a href="#program">Program</a>
-        <a href="#accommodation">Accommodation</a>
-        <a href="#gifts">Gifts</a>
-        <a href="#contact">Contact</a>
+        <a href="#rsvp" data-i18n="nav.rsvp">RSVP</a>
+        <a href="#reception" data-i18n="nav.reception">Reception</a>
+        <a href="#program" data-i18n="nav.program">Program</a>
+        <a href="#accommodation" data-i18n="nav.accommodation">Accommodation</a>
+        <a href="#gifts" data-i18n="nav.gifts">Gifts</a>
+        <a href="#contact" data-i18n="nav.contact">Contact</a>
+        <button id="lang-switch" style="margin-left:18px; font-size:32px; background:transparent; border:none; cursor:pointer; font-family:inherit; line-height:1;">🇫🇮</button>
       </nav>
 
       <section id="rsvp" class="grid-2" style="scroll-margin-top: 500px; margin-top: 120px;">
@@ -40,16 +41,16 @@
 
         <!-- Right: title + RSVP -->
         <div>
-          <h1 class="type" style="text-align:center;">Julia and<br>Jeremi are<br>getting married!</h1>
+          <h1 class="type" style="text-align:center;" data-i18n="section.rsvp.title">Julia and<br>Jeremi are<br>getting married!</h1>
 
-          <p class="lead" style="text-align:center; max-width:520px; margin: 0 auto 26px;">
+          <p class="lead" style="text-align:center; max-width:520px; margin: 0 auto 26px;" data-i18n="section.rsvp.lead">
             Join us in celebrating our love on 8.8.2026 at<br>
             Matilda-talo, Mathildedal
           </p>
 
           <div style="display:flex; gap:18px; align-content:center; justify-content:center;">
             <!-- Replace link with your RSVP URL (Google Form etc.) -->
-            <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfYNVzzEVMoNTvbCDPRSzw6mABW4DqZNR_0BfONpWjtZe2XBw/viewform?usp=sharing&ouid=103029458124035450857" target="_blank" rel="noreferrer">rsvp</a>
+            <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLSfYNVzzEVMoNTvbCDPRSzw6mABW4DqZNR_0BfONpWjtZe2XBw/viewform?usp=sharing&ouid=103029458124035450857" target="_blank" rel="noreferrer" data-i18n="section.rsvp.button">RSVP</a>
           </div>
         </div>
       </section>
@@ -58,13 +59,13 @@
       <section id="reception" style="margin-top:80px; margin-bottom:80px;">
         <div class="reception-grid">
           <div class="reception-left">
-            <h1 class="type reception-title" style="margin-top:80px; margin-bottom:36px; text-align:center;">about the reception</h1>
+            <h1 class="type reception-title" style="margin-top:80px; margin-bottom:36px; text-align:center;" data-i18n="section.reception.title">about the reception</h1>
             <section class="reception-wrap" style="grid-template-columns: 1fr 1fr;">
               <!-- LEFT: Venue -->
               <div class="info-block">
                 <img class="sticker-center" src="./assets/venue.png" alt="Matilda-Talo venue" />
-                <h2 class="type label">venue</h2>
-                <p>
+                <h2 class="type label" data-i18n="section.reception.venue">venue</h2>
+                <p data-i18n="section.reception.venue.text">
                   The party will take place at Matilda-Talo, a historic
                   “people’s house” on the shore of lake Matilda. The venue includes
                   an outdoor dance floor and lakeside sauna.
@@ -73,8 +74,8 @@
               <!-- CENTER: Attire -->
               <div class="info-block">
                 <img class="sticker-center" src="./assets/peachflower.png" alt="" aria-hidden="true" />
-                <h2 class="type label">attire</h2>
-                <p>
+                <h2 class="type label" data-i18n="section.reception.attire">attire</h2>
+                <p data-i18n="section.reception.attire.text">
                   Formal wear, colourful, summery. Consider the Finnish weather in August.
                   Bring a swimsuit if you would like a late evening dip from the sauna!
                 </p>
@@ -97,7 +98,7 @@
 
         <header class="program-header">
         <div style="position:relative; text-align:center;">
-          <h1 class="type program-title">program of events</h1>
+          <h1 class="type program-title" data-i18n="section.program.title">program of events</h1>
         </div>
         </header>
         <section class="program-body">
@@ -107,12 +108,12 @@
             </div>
             <div class="program-right">
               <ul class="schedule-list">
-                <li><span class="schedule-time">13:30</span><span class="schedule-event">Arrival</span></li>
-                <li><span class="schedule-time">14:00</span><span class="schedule-event">Welcome toast and ceremony</span></li>
-                <li><span class="schedule-time">15:00</span><span class="schedule-event">Garden aperatifs</span></li>
-                <li><span class="schedule-time">17:00</span><span class="schedule-event">Dinner</span></li>
-                <li><span class="schedule-time">19:30</span><span class="schedule-event">Live band and dancing</span></li>
-                <li><span class="schedule-time">22:00</span><span class="schedule-event">DJ and evening snack</span></li>
+                <li><span class="schedule-time">13:30</span><span class="schedule-event" data-i18n="section.program.13_30">Arrival</span></li>
+                <li><span class="schedule-time">14:00</span><span class="schedule-event" data-i18n="section.program.14_00">Welcome toast and ceremony</span></li>
+                <li><span class="schedule-time">15:00</span><span class="schedule-event" data-i18n="section.program.15_00">Garden aperatifs</span></li>
+                <li><span class="schedule-time">17:00</span><span class="schedule-event" data-i18n="section.program.17_00">Dinner</span></li>
+                <li><span class="schedule-time">19:30</span><span class="schedule-event" data-i18n="section.program.19_30">Live band and dancing</span></li>
+                <li><span class="schedule-time">22:00</span><span class="schedule-event" data-i18n="section.program.22_00">DJ and evening snack</span></li>
               </ul>
             </div>
           </div>
@@ -129,18 +130,18 @@
                 </div>
               </div>
               <div class="accommodation-text">
-                <h1 class="type">Staying at<br>Mathildedal</h1>
-                <p>
+                <h1 class="type" data-i18n="section.accommodation.title">Staying at<br>Mathildedal</h1>
+                <p data-i18n="section.accommodation.text1">
                   Our wedding will take place in Mathildedal, around 30 minutes from Salo.
                   There are many accommodation options in the village from hotel rooms
                   to cabins for larger groups.
                 </p>
-                <p>
+                <p data-i18n="section.accommodation.text2">
                   We have a discount code (Group15) for those wishing to book a cabin
                   at Matilda Villas for the whole weekend with a larger group (4–8 people).
                 </p>
                 <div class="links">
-                  <p>
+                  <p data-i18n="section.accommodation.links">
                     More information: <a href="https://visitmathildedal.fi">visitmathildedal.fi</a>
                     <br>
                     Matilda Villas: <a href="https://www.matildavillas.fi">www.matildavillas.fi</a>
@@ -168,20 +169,18 @@
                 </div>
               </div>
               <div class="gifts-text">
-                <h1 class="type">gifts</h1>
-                <p>Your presence is truly the best gift we could ask for!</p>
-                <p>
+                <h1 class="type" data-i18n="section.gifts.title">gifts</h1>
+                <p data-i18n="section.gifts.lead">Your presence is truly the best gift we could ask for!</p>
+                <p data-i18n="section.gifts.text">
                   But if you feel the call to give a little something, you can contribute to our future
-                  honeymoon trip to Vietnam! In 2014 we travelled to Vietnam as one of our first trips
-                  together, and therefore we’d love to commemorate our marriage by revisiting for our
-                  honeymoon.
+                  honeymoon trip!
                 </p>
-                <p class="account">
+                <p class="account" data-i18n="section.gifts.account">
                   Our honeymoon fund account is
                   <br>
                   FI89 5723 0221 2979 92 (BIC: OKOYFIHH)
                 </p>
-                <p>Thank you for being part of this milestone with us.</p>
+                <p data-i18n="section.gifts.thanks">Thank you for being part of this milestone with us ❤️</p>
               </div>
             </section>
           </div>
@@ -194,20 +193,20 @@
           <div class="container">
             <section class="contact-wrap">
               <div>
-                <h1 class="type contact-lead">for related questions or<br>concerns,please contact:</h1>
+                <h1 class="type contact-lead" data-i18n="section.contact.title">for related questions or<br>concerns,please contact:</h1>
                 <div class="contacts-grid">
                   <div class="person">
-                    <h2 class="type">jeremi pinola</h2>
-                    <div class="label">Phone</div>
+                    <h2 class="type" data-i18n="section.contact.jeremi">jeremi pinola</h2>
+                    <div class="label" data-i18n="section.contact.phone">Phone</div>
                     <p class="value">(+358) 44 568 2443</p>
-                    <div class="label">Email</div>
+                    <div class="label" data-i18n="section.contact.email">Email</div>
                     <p class="value">jeremipinola@gmail.com</p>
                   </div>
                   <div class="person">
-                    <h2 class="type">julia saari</h2>
-                    <div class="label">Phone</div>
+                    <h2 class="type" data-i18n="section.contact.julia">julia saari</h2>
+                    <div class="label" data-i18n="section.contact.phone">Phone</div>
                     <p class="value">(+358) 44 055 7107</p>
-                    <div class="label">Email</div>
+                    <div class="label" data-i18n="section.contact.email">Email</div>
                     <p class="value">mariajulia.saari@gmail.com</p>
                   </div>
                 </div>
@@ -223,5 +222,104 @@
     </div>
   </main>
 
+<script>
+// Simple i18n system
+const translations = {
+  fi: {
+    'nav.rsvp': 'Ilmoittautuminen',
+    'nav.reception': 'Vastaanotto',
+    'nav.program': 'Ohjelma',
+    'nav.accommodation': 'Majoitus',
+    'nav.gifts': 'Lahjat',
+    'nav.contact': 'Yhteystiedot',
+    // Section titles and key phrases
+    'section.rsvp.title': 'Julia ja Jeremi menevät naimisiin!',
+    'section.rsvp.lead': 'Tule juhlimaan rakkauttamme 8.8.2026 Matilda-talolla, Mathildedalissa',
+    'section.rsvp.button': 'Ilmoittaudu',
+    'section.reception.title': 'vastaanotosta',
+    'section.reception.venue': 'juhlatila',
+    'section.reception.venue.text': 'Juhlat pidetään Matilda-talolla, historiallisessa työväentalossa Matildanjärven rannalla. Tilaan kuuluu ulkotanssilattia ja rantasauna.',
+    'section.reception.attire': 'pukeutuminen',
+    'section.reception.attire.text': 'Juhlava, värikäs, kesäinen. Ota uimapuku mukaan, jos haluat saunoa!',
+    'section.program.title': 'ohjelma',
+    'section.program.13_30': 'Saapuminen',
+    'section.program.14_00': 'Tervetulomalja ja seremonia',
+    'section.program.15_00': 'Kahvia ja aperatiiveja',
+    'section.program.17_00': 'Illallinen',
+    'section.program.19_30': 'Bändi ja tanssimista',
+    'section.program.22_00': 'DJ ja iltapala',
+    'section.accommodation.title': 'majoittuminen mathildedalissa',
+    'section.accommodation.text1': 'Häät järjestetään Mathildedalissa, noin 30 minuutin päässä Salosta. Kylässä on monia majoitusvaihtoehtoja hotellihuoneista mökkeihin.',
+    'section.accommodation.text2': 'Meillä on alennuskoodi (Group15) niille, jotka haluavat varata mökin Matilda Villasista koko viikonlopuksi (4–8 hlö).',
+    'section.accommodation.links': 'Lisätietoja: visitmathildedal.fi\nMatilda Villas: www.matildavillas.fi',
+    'section.gifts.title': 'lahjat',
+    'section.gifts.lead': 'Läsnäolosi on meille parasta mitä voimme toivoa!',
+    'section.gifts.text': 'Jos kuitenkin haluat muistaa meitä, voit tukea tulevaan häämatkaamme!',
+    'section.gifts.account': 'Häämatkatilin numero on\nFI89 5723 0221 2979 92)',
+    'section.gifts.thanks': 'Kiitos, että olet mukana juhlimassa kanssamme ❤️',
+    'section.contact.title': 'kysyttävää? ota yhteyttä:',
+    'section.contact.jeremi': 'jeremi pinola',
+    'section.contact.julia': 'julia saari',
+    'section.contact.phone': 'Puhelin',
+    'section.contact.email': 'Sähköposti',
+  },
+  en: {
+    'nav.rsvp': 'RSVP',
+    'nav.reception': 'Reception',
+    'nav.program': 'Program',
+    'nav.accommodation': 'Accommodation',
+    'nav.gifts': 'Gifts',
+    'nav.contact': 'Contact',
+    // Section titles and key phrases
+    'section.rsvp.title': 'Julia and Jeremi are getting married!',
+    'section.rsvp.lead': 'Join us in celebrating our love on 8.8.2026 at Matilda-talo, Mathildedal',
+    'section.rsvp.button': 'RSVP',
+    'section.reception.title': 'about the reception',
+    'section.reception.venue': 'venue',
+    'section.reception.venue.text': 'The party will take place at Matilda-Talo, a historic “people’s house” on the shore of lake Matilda. The venue includes an outdoor dance floor and lakeside sauna.',
+    'section.reception.attire': 'attire',
+    'section.reception.attire.text': 'Formal wear, colourful, summery. Consider the Finnish weather in August. Bring a swimsuit if you would like a late evening dip from the sauna!',
+    'section.program.title': 'program of events',
+    'section.program.13_30': 'Arrival',
+    'section.program.14_00': 'Welcome toast and ceremony',
+    'section.program.15_00': 'Garden aperatifs',
+    'section.program.17_00': 'Dinner',
+    'section.program.19_30': 'Live band and dancing',
+    'section.program.22_00': 'DJ and evening snack',
+    'section.accommodation.title': 'staying at mathildedal',
+    'section.accommodation.text1': 'Our wedding will take place in Mathildedal, around 30 minutes from Salo. There are many accommodation options in the village from hotel rooms to cabins for larger groups.',
+    'section.accommodation.text2': 'We have a discount code (Group15) for those wishing to book a cabin at Matilda Villas for the whole weekend with a larger group (4–8 people).',
+    'section.accommodation.links': 'More information: visitmathildedal.fi\nMatilda Villas: www.matildavillas.fi',
+    'section.gifts.title': 'gifts',
+    'section.gifts.lead': 'Your presence is truly the best gift we could ask for!',
+    'section.gifts.text': 'But if you feel the call to give a little something, you can contribute to our future honeymoon trip!',
+    'section.gifts.account': 'Our honeymoon fund account is\nFI89 5723 0221 2979 92 (BIC: OKOYFIHH)',
+    'section.gifts.thanks': 'Thank you for being part of this milestone with us.',
+    'section.contact.title': 'for related questions or concerns, please contact:',
+    'section.contact.jeremi': 'jeremi pinola',
+    'section.contact.julia': 'julia saari',
+    'section.contact.phone': 'Phone',
+    'section.contact.email': 'Email',
+  }
+};
+
+let currentLang = 'en';
+const langSwitch = document.getElementById('lang-switch');
+
+langSwitch.addEventListener('click', () => {
+  currentLang = currentLang === 'en' ? 'fi' : 'en';
+  updateTranslations();
+  langSwitch.textContent = currentLang === 'en' ? '🇫🇮' : '🇬🇧';
+});
+
+function updateTranslations() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    if (translations[currentLang][key]) {
+      el.textContent = translations[currentLang][key];
+    }
+  });
+}
+</script>
 </body>
 </html>

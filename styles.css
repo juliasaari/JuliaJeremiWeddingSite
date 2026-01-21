@@ -138,6 +138,11 @@
   .center-stage {
     text-align: center;
   }
+  .schedule-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 .schedule-event {
   padding-bottom: px;
@@ -159,9 +164,15 @@
   align-items: flex-start;
   order: 2;
 }
+.schedule-list {
+  align-content: center;
+}
 @media (max-width: 860px) {
   .program-grid {
     grid-template-columns: 1fr;
+  }
+  .program-right {
+    justify-content: center;
   }
   .program-left, .program-right {
     order: initial;
